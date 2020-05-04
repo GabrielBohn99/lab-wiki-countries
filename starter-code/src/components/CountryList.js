@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 const CountryList = (props) => {
   return (
 
-        <div className="col-5" style={{height:"50%", overflow:"scroll" }}>
+        <div className="col-5" style={{maxHeight:"38rem", overflow:"scroll", textAlign:"left" }}>
           <div className="list-group">
             {props.countries.map((item, idx) => (
-             <Link  to={`/country/${item.cca3}`} >{item.name.official}</Link>
+             <Link className="list-group-item list-group-item-action" to={`/country/${item.cca3}`} >{item.flag}{item.name.official}</Link>
             ))}
           </div>
         </div>

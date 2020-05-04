@@ -10,13 +10,13 @@ const CountryDetail = (props) => {
 
 
       return (
-        <div class="col-7" >
+        <div class="col-6" >
             <h1>{countrie.name.official}</h1>
             <table class="table">
               <thead></thead>
               <tbody>
                 <tr>
-                  <td style={{width: '100%'}}>Capital</td>
+                  <td style={{width: '50%'}}>Capital</td>
                   <td>{countrie.capital[0]}</td>
                 </tr>
                 <tr>
